@@ -1,0 +1,232 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: lightgray;
+}
+body header {
+  width: 70%;
+  height: 250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 2.5%;
+}
+body header .blue-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-color: #456990;
+}
+body header article {
+  color: #456990;
+  width: 100%;
+}
+body header article h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+body header article .summary {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+body main {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+body main section {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+body main section .lotr-img-container {
+  background-image: url("./images/le-seigneur-des-anneaux.jpg");
+  height: 30vh;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .alice-img-container {
+  background-image: url("./images/alice-au-pays-des-merveilles.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-position: 50%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .mondes-img-container {
+  background-image: url("./images/le-meilleur-des-mondes.jpg");
+  height: 30vh;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .portrait-img-container {
+  background-image: url("./images/le-portrait-de-dorian-gray.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .moqueur-img-container {
+  background-image: url("./images/ne-tirez-pas-sur-l-oiseau-moqueur.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .fahrenheit-img-container {
+  background-image: url("./images/fahrenheit-451.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .sherlock-img-container {
+  background-image: url("./images/les-aventures-de-sherlock-holmes.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .frankenstein-img-container {
+  background-image: url("./images/frankenstein.png");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .got-img-container {
+  background-image: url("./images/le-trône-de-fer.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section .nuit-img-container {
+  background-image: url("./images/la-nuit-des-temps.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main section nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2.5%;
+}
+body main section nav h3 {
+  background-color: #169873;
+  color: rgb(241, 245, 249);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+body main section nav h4 {
+  background-color: #F4B942;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+body main section article {
+  padding: 0.75rem 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+body main section article h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: center;
+  margin-top: 3.5%;
+}
+body main section article p {
+  text-align: justify;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+body main section article q {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.349);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+  width: 100%;
+  height: 98%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transform: translate(-2.5%, -18%);
+  padding: 50% 0;
+  text-align: center;
+}
+body main section button {
+  background-color: #96C9DC;
+  border: 2px solid #96C9DC;
+  padding: 0.5rem 0.75rem;
+  border-radius: 50px;
+  margin: 0 auto;
+  transition: all ease-in-out 300ms;
+}
+body main section button:hover {
+  background-color: #456990;
+  color: rgb(241, 245, 249);
+  transition: all ease-in-out 300ms;
+}
+body main section .hidden {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  main section {
+    display: flex !important;
+  }
+  main section article h2 {
+    font-size: 1.5rem !important;
+  }
+  main section article q {
+    transform: translate(-1.9%, -50%) !important;
+  }
+}/*# sourceMappingURL=style.css.map */
