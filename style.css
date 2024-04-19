@@ -243,7 +243,7 @@ body footer {
   margin-top: 0.9375rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1500px) {
   main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -255,6 +255,6 @@ body footer {
     font-size: 1.4rem !important;
   }
   main section article q {
-    transform: translate(-2%, -30%) !important;
+    transform: translate(-1.9%, -50%) !important;
   }
 }/*# sourceMappingURL=style.css.map */
