@@ -9,34 +9,46 @@
 body {
   width: 100%;
   height: auto;
-  background-color: lightgray;
+  background-color: #725049;
+  color: #725049;
 }
 body header {
   width: 70%;
-  height: 250px;
   margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 25px;
+  border-radius: 10px;
+  background-color: #F6C5B6;
   margin-bottom: 2.5%;
+  margin-top: 2.5%;
 }
-body header .blue-circle {
-  height: 200px;
-  width: 200px;
+body header .upper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+body header .circle {
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
-  background-color: #456990;
+  border: 2px solid #725049;
 }
 body header article {
-  color: #456990;
   width: 100%;
 }
 body header article h1 {
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: "Dancing Script", cursive;
 }
-body header article .summary {
-  font-size: 1.5rem;
-  font-weight: 300;
+body header article .text {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 body main {
   width: 70%;
@@ -47,12 +59,17 @@ body main {
   gap: 1.5rem;
 }
 body main section {
-  border: 1px solid black;
-  background-color: white;
+  border: 1px solid #F6C5B6;
+  background-color: #F6C5B6;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   height: 100%;
+  transition: transform 0.1s;
+}
+body main section:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 body main section .lotr-img-container {
   background-image: url("./images/le-seigneur-des-anneaux.jpg");
@@ -145,7 +162,7 @@ body main section nav {
   margin-top: 2.5%;
 }
 body main section nav h3 {
-  background-color: #169873;
+  background-color: #F7826C;
   color: rgb(241, 245, 249);
   width: -moz-max-content;
   width: max-content;
@@ -155,13 +172,13 @@ body main section nav h3 {
   font-weight: 500;
 }
 body main section nav h4 {
-  background-color: #F4B942;
+  background-color: #F7B98D;
   width: -moz-max-content;
   width: max-content;
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 body main section article {
   padding: 0.75rem 0.5rem;
@@ -171,7 +188,7 @@ body main section article {
 }
 body main section article h2 {
   font-size: 1.875rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 120%;
   text-align: center;
   margin-top: 3.5%;
@@ -180,16 +197,16 @@ body main section article p {
   text-align: justify;
   padding: 1rem;
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 body main section article q {
   position: absolute;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.349);
-  color: white;
-  font-size: 1rem;
+  color: #F6C5B6;
+  font-size: 1.5rem;
   font-weight: 500;
-  font-style: italic;
+  font-family: "Dancing Script", cursive;
   width: 100%;
   height: 98%;
   -webkit-backdrop-filter: blur(5px);
@@ -199,23 +216,34 @@ body main section article q {
   text-align: center;
 }
 body main section button {
-  background-color: #96C9DC;
-  border: 2px solid #96C9DC;
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  background-color: #D96C68;
+  border: 2px solid #D96C68;
   padding: 0.5rem 0.75rem;
   border-radius: 50px;
   margin: 0 auto;
   transition: all ease-in-out 300ms;
 }
 body main section button:hover {
-  background-color: #456990;
+  background-color: #872E3C;
   color: rgb(241, 245, 249);
   transition: all ease-in-out 300ms;
 }
 body main section .hidden {
   display: none;
 }
+body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #F6C5B6;
+  font-size: 0.875rem;
+  margin-top: 0.9375rem;
+}
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1024px) {
   main {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -224,9 +252,9 @@ body main section .hidden {
     display: flex !important;
   }
   main section article h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.4rem !important;
   }
   main section article q {
-    transform: translate(-1.9%, -50%) !important;
+    transform: translate(-2%, -30%) !important;
   }
 }/*# sourceMappingURL=style.css.map */

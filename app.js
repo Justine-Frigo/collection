@@ -138,7 +138,6 @@ for (let book of booksQuotation) {
   const section = document.createElement("section");
   main.appendChild(section);
 
-  // on définit une boîte pour nos images afin de pouvoir la modifier en css
   const imgContainer = document.createElement("div");
   imgContainer.className = `${book.bookClass}-img-container`;
   section.appendChild(imgContainer);
@@ -184,3 +183,4 @@ function displayQuote(button, quote) {
     quote.classList.toggle('hidden')
   })
 }
+
